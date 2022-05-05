@@ -14,3 +14,11 @@ class contact(models.Model):
     subject=models.TextField()
     date=models.DateField()
 
+class signupmodel(models.Model):
+    first_name=models.CharField(max_length=122)
+    last_name=models.CharField(max_length=122)
+    email=models.CharField(max_length=122)
+    password=models.CharField(max_length=122)
+    confirm_password=models.CharField(max_length=122)
+    
+
